@@ -20,6 +20,11 @@
                 <default>false</default>
                 <label>Commuter</label>
             </value>
+            <value>
+                <fullName>BMX</fullName>
+                <default>false</default>
+                <label>BMX</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
