@@ -31,4 +31,11 @@
         <target>Case</target>
         <type>SalesforceObject</type>
     </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Bike Customizer</label>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/bike-customizer</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
 </NavigationMenu>
