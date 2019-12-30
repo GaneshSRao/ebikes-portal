@@ -1,0 +1,23 @@
+<template>
+    <lightning-card icon-name="standard:apex_plugin">
+        <template if:true={product.data}>
+            <span slot="title">{product.data.fields.Name.value}</span>
+            <div class="slds-m-horizontal_medium">
+                <img
+                    src={product.data.fields.Picture_URL__c.value}
+                    class="product"
+                    alt="Product picture"
+                />
+            </div>
+        </template>
+        <template if:true={noData}>
+            <c-placeholder
+                message="Select a product to see details"
+            ></c-placeholder>
+        </template>
+
+        <template if:true={product.error}>
+            <c-inline-message errors={product.error}></c-inline-message>
+        </template>
+    </lightning-card>
+</template>
